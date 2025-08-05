@@ -56,7 +56,7 @@ st.markdown("<p style='text-align:center;'>Slam this button to dunk on Skye’s 
 # Load roasts
 @st.cache_data
 def load_roasts():
-    with open("roasts.txt", "r", encoding="utf-8") as file:
+    with open("skye_roasts.txt", "r", encoding="utf-8") as file:
         return list(set(line.strip() for line in file if line.strip()))
 
 roasts = load_roasts()
